@@ -4,9 +4,9 @@
 
 | Metric | Value |
 |---|---:|
-| CER | 3.01% |
-| WER | 7.33% |
-| Exact Match | 67.55% |
+| Character Error Rate (CER) | **3.01%** |
+| Word Error Rate (WER) | **7.33%** |
+| Exact Match | **67.55%** |
 
 ## Dataset
 
