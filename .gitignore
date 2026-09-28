@@ -30,13 +30,15 @@ forms_for_parsing.txt
 # Generated pseudo-labels
 pseudo_labels.json
 
-# Training outputs
+# Training outputs / checkpoints
 logs/
+runs/
+checkpoints/
 trocr_checkpoints/
 trained_trocr/
-runs/
+**/checkpoint-*/
 
-# Model/checkpoint artifacts
+# Model weights / artifacts
 *.bin
 *.pt
 *.pth
