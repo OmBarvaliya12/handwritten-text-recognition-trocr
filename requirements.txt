@@ -1,0 +1,18 @@
+# Core
+numpy
+pandas
+matplotlib
+tqdm
+Pillow
+
+# Deep learning
+torch
+torchvision
+
+# Hugging Face
+transformers
+datasets
+accelerate
+
+# Evaluation
+jiwer
