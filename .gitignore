@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local dataset files
+data/
+data_subset/
+*.png
+*.jpg
+*.jpeg
+forms_for_parsing.txt
+
+# Generated pseudo-labels
+pseudo_labels.json
+
+# Training outputs
+logs/
+trocr_checkpoints/
+trained_trocr/
+runs/
+
+# Model/checkpoint artifacts
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Temporary files
+*.tmp
+*.swp
