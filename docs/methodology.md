@@ -2,7 +2,7 @@
 
 ## Problem
 
-Handwritten Text Recognition maps an image containing handwriting to a text sequence.
+Handwritten Text Recognition (HTR) maps an image containing handwriting to a text sequence.
 
 ## Model
 
@@ -12,7 +12,7 @@ The project starts from `microsoft/trocr-base-handwritten`, a pretrained TrOCR v
 
 The notebook validates local images with PIL, converts them to RGB, applies the TrOCR processor, and optionally applies training-time augmentation.
 
-Training augmentation includes small rotations, Gaussian blur, brightness/contrast variation and small translations.
+Training augmentation includes small rotations, Gaussian blur, brightness/contrast variation, and small translations.
 
 ## Pseudo-label generation
 
@@ -27,14 +27,14 @@ The experiment builds a dataframe containing image paths and generated labels, t
 ## Training configuration
 
 - 6 epochs
-- learning rate: 3e-5
-- cosine learning-rate schedule
-- warm-up ratio: 0.05
-- weight decay: 0.01
-- gradient accumulation: 2
-- checkpoint every 500 steps
-- best-checkpoint selection using CER
-- gradient checkpointing
+- Learning rate: 3e-5
+- Cosine learning-rate schedule
+- Warm-up ratio: 0.05
+- Weight decay: 0.01
+- Gradient accumulation: 2
+- Checkpoint every 500 steps
+- Best-checkpoint selection using CER
+- Gradient checkpointing
 - FP16 when CUDA is available
 
 ## Evaluation
@@ -52,6 +52,8 @@ The inference helper accepts a single image path and generates a text sequence u
 ## Post-processing
 
 An optional dictionary-based spell-correction function uses Python's `difflib.get_close_matches` to replace short words with close dictionary entries.
+
+This post-processing step is separate from the core TrOCR model.
 
 ## Evaluation caveat
 
